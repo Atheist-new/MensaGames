@@ -1,0 +1,326 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+p1{
+    margin: 0;
+}
+p{
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.slide-content p{
+    padding: 2vh;
+    line-height: 1.5em;
+}
+.noselect {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+body {
+    background: blueviolet;
+    width: 100%;
+    margin: 0px;
+    left: 0px;
+    right: 0px;
+}
+.panel {                    /*Ширина до 1000 в данном режиме, при ширине менее 1000 панель меню скрыта, открывается при нажатии на поле меню.*/
+    height: 70px;
+    min-width: 750px;
+    width: 100%;
+    background-color: rgb(26, 5, 46);
+    display: flex;
+    position: fixed;
+    z-index: 999999;
+}
+
+
+.left-button{
+    display: flex;
+    margin-left: 10px;
+}
+
+.right-button{
+    display: flex;
+    position: absolute; 
+    right: 10px;
+    
+}
+.icons-panel{
+    height: auto;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+
+input[type=search]
+{
+    height: 30px;
+    margin-top: 26px;
+    outline: none;
+    border-radius: 3px;
+    padding: 3px;
+    border: 2px solid rgb(115, 48, 177);
+    background-color: black;
+}
+input[type=search]:hover{
+    border: 2px solid rgb(115, 48, 177);
+}
+input[type=search]:focus{
+    border: 2px solid rgb(115, 48, 177);
+    background-color: white;
+}
+.top-panel{
+    text-align: center;
+    height: 20px;
+    background-color: black;
+    margin-top: 26px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    padding: 2px;
+    border-radius: 3px;
+    border: 3px solid rgb(115, 48, 177);      
+    outline: none;
+}
+
+.top-panel:hover{
+    box-shadow: 0px 0px 20px 8px rgb(88 61 93);
+}
+
+.top-panel:active{
+    box-shadow: inset 0px 0px 5px 4px rgb(88 61 93);
+}
+
+.main-part {
+    padding-top: 80px;
+    background-color: rgb(58, 14, 99);
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+.menu {
+width:20%;
+height: calc((60vw)*9/16 + 10px);
+max-height: calc(100% - 110px);
+}
+
+.menu2 {
+    margin: 8%;
+    height: calc((60vw)*9/16 + 10px);
+}
+
+.menu-block{
+    margin-top: 10px;
+    background-color: rgb(44, 3, 82);
+    border-radius: 3px;
+    border: 3px solid rgb(115, 48, 177);
+    text-align: center;    
+}
+
+.menu-block:hover{
+    box-shadow: 0px 0px 15px 0px rgb(84 75 75);
+}
+
+.menu-block:active{
+    box-shadow: inset 0px 0px 15px 0px rgb(84 75 75);
+}
+
+.bodys{
+    width: 60%;
+    height: calc(100vh - 80px);
+}
+
+.game-zones{
+    border: 5px solid rgba(115, 48, 177);
+    background-image: url(../img/front-MafiaPotter.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: calc((60vw)*9/16);
+    max-height: calc(100% - 110px);
+}
+
+.game-description{
+    margin-top: 10px;
+    height: calc(100vh - 80px - (60vw) * 9 / 16 - 30px);
+    text-align: center;
+}
+
+.new-board{
+    width: 20%;
+}
+
+.new-block{
+    margin: 8%;
+    background-color: rgb(44, 3, 82);
+    border: 3px solid rgb(115, 48, 177);
+    text-align: center;    
+}
+
+.size1{
+    height: calc((100vh - 80px - 24%)/6);
+}
+.size2{
+    height: calc((100vh - 80px - 24%)/3);
+}
+
+.size3{
+    height: calc((100vh - 80px - 24%)/2);
+}
+
+.shop{
+    height: calc(100vh - 70px);
+    background-color: rgb(58, 14, 99);
+    display: flex;
+}
+
+.string_shop{
+    display: flex;
+}
+/*@media screen and (min-heght: calc(25vw/3*4)){*/
+.opisanie{
+    margin-left: calc(50px + 5vw);
+    margin-right: 5vw;
+    width: calc(80vw - 50px - (80vh - 80px)/4*3);
+    min-width: calc(55vw - 50px);
+}
+
+.info_r{
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.Product-Description{
+    margin-top: 10vh;
+}
+
+.kypi{
+    display: flex;
+}
+
+.kypi-panel{
+    background-color: black;
+    margin: 26px auto 0 auto;
+    padding: 2px;
+    border-radius: 3px;
+    border: 3px solid rgb(115, 48, 177);      
+    outline: none;
+    text-align: center;
+}
+
+.kypi-panel:hover{
+    box-shadow: 0px 0px 20px 8px rgb(88 61 93);
+}
+
+.kypi-panel:active{
+    box-shadow: inset 0px 0px 5px 4px rgb(88 61 93);
+}
+
+.info{
+    background-color: rgb(26, 5, 46);
+    width: 100%;
+}
+
+.O_nas{
+    width: 100%;
+    min-height: calc(95vh - 94px);
+}
+
+.Portrait{
+    margin-top: 5vh;
+    margin-left: 3vh;
+    height: 25vh;
+    width: 25vh;
+    border-radius: 100%;
+    background-color: blueviolet;
+}
+
+.Foto1
+{
+    background-image: url(../img/Garmashov_Artiom.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.Foto2
+{
+    background-image: url(../img/Aleinikova_Nadezda.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.Foto3
+{
+    background-image: url(../img/Poliakova_Tatiana.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.Foto4
+{
+    background-image: url(../img/Kyrisheva_Daria.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.info_mat{
+    text-align: center;
+    margin: auto 0 5vh 2vw;
+}
+
+img{
+    filter:brightness(0) invert(1);  
+}
+
+@media screen and (max-width: 940px)
+{
+.hidden{
+        display: none;
+        max-width: 10px;
+    }
+
+.menu{
+        display: none;
+    }
+    
+.new-board{
+        display: none;
+    }
+
+.game-zones{
+        max-height: calc(100% - 20px);
+    }
+
+.bodys{
+        margin-left: 5%;
+        width: 90%;
+    }
+
+.game-description{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 450px)
+{
+.menu{
+        display: none;
+    }
+    
+.new-board{
+        display: none;
+    }
+.game-zones{
+        max-height: calc(100% - 20px);
+    }
+.bodys{
+        margin-left: 5%;
+        width: 90%;
+    }
+.game-description{
+        display: none;
+    }
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MensaGames</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/modal_window.css">
+    
+</head><font color="white">
+<body class="noselect">
+    <div class="panel">
+        <div class="left-button">
+            <div class="icons-panel"><img src="img/StartApp_logo.svg" height="50px"></div>
+            <div class="top-panel hidden" id="game_zone">Игровая площадка</div>
+            <div class="top-panel hidden" id="market_zone">Магазин</div>
+            <div class="top-panel hidden" id="info_zone">О нас</div>
+        </div>
+        <div class="right-button">
+            <input type="search">
+            <div class="top-panel">Поиск</div>
+            <a href="#openModal-login" style="text-decoration: none;">
+                <div class="top-panel"><p1 style="color:#ffffff">Учётная запись</p1></div>
+            </a>
+                 <!--Модальное окно учетной записи-->
+            <div id="openModal-login" class="modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title">Авторизация</h3>
+                      <a href="#close" title="Close" class="close">×</a>
+                    </div>
+                        <div class="modal-body">
+                            <form action="" method="post">
+                                <p>Введите логин: <input style="margin-left: 11px" type="text" name="login" required placeholder= ""></p>
+                                <p>Введите пароль: <input type="password" name="pass"></p>
+                                <p><input type="submit" value="Отправить" name="done"></p>
+                                </form>
+                                или Зарегестрируйтесь
+                        </div>
+                  </div>
+                </div>
+            </div>
+             
+                <a href="#openModal-help" style="text-decoration: none;">
+                    <div class="top-panel"><p1 style="color:#ffffff">Поддержка</p1></div>
+                </a> 
+                <!--Модальное окно для поддрежки-->
+               
+            <div id="openModal-help" class="modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title">Обращение в поддержку</h3>
+                      <a href="#close-help" title="Close" class="close">×</a>
+                    </div>
+                        <div class="modal-body">
+                            <form id="form-helper">
+                                
+                                <div class="helper-infofield">Тема обращения</div>
+                                <select id="choose-theme" class="spisok" name="theme" >
+                                <option selected>Выберите вариант</option>
+                                <option>Вопрос по работе сайта</option>
+                                <option>Помощь в оформлении заказа</option>
+                                <option>Сотрудничество</option>
+                                <option>Сообщения о неполадках</option>
+                                <option>Пожелания / предложения</option>
+                                </select>
+
+                                <div><br>Ваше имя</div>
+                                <input type="form" name="name" >
+                                <div><br>Ваш email</div>
+                                <input type="form" name="email">
+                                <div><br>Сообщение</div>
+                                <textarea id= "user-onfo" class="spisok" name="message" style="width:70%"></textarea>
+                                <br><br>
+                                <input id = "send-info" type="submit" name="submit_btn" value="Отправить">                                
+                            </form>                        
+                        </div>
+                  </div>
+                </div>
+            </div>         
+
+        </div>
+    </div>
+    <div class="main-part">
+        <div class="menu"><div class="menu2">
+            <div class="menu-block"><p><font size="3">Новинки</font></p></div>
+            <div class="menu-block"><p><font size="3">Популярное</font></p></div>
+            <div class="menu-block"><p><font size="3">Ранний доступ</font></p></div>
+            <div class="menu-block"><p><font size="3">Классические игры</font></p></div>
+            <div class="menu-block"><p><font size="3">Кастомизированные игры</font></p></div>
+            <div class="menu-block"><p><font size="3">Эксклюзивные игры</font></p></div>
+        </div></div>
+        <div class="bodys">
+            <div class="game-zones"></div>
+            <div class="game-description"><font size="2">
+                Всемирно известная игра мафия, ставшая иконой мира настольных игр предстаёт пред вами в совершенно ином образе.
+                В рамках проекта MensaGames вы сможете насладиться этой игрой, погрузившись в мир Гарри Поттера.
+                Коварство, ложь, хитрость с этим и не только вам предстоит встретиться в погоне за кубком огня.</font>
+            </div>
+        </div>
+        <div class="new-board">
+            
+            <div class="new-block size3"><p><font size="4">Новость дня</font></p></div>
+            <div class="new-block size2"><p><font size="2">Вчерашняя новость</font></p></div>
+            <div class="new-block size1"><p><font size="1">Старая новость</font></p></div>
+        </div>
+    </div>
+    <div class="shop">
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <input type="radio" name="slider" id="slide5">
+            <input type="radio" name="slider" id="slide6">
+            <input type="radio" name="slider" id="slide7">
+            <div id="slides">
+               <div id="overflow">
+                  <div class="inner">
+                     <div class="slide slide_1">
+                        <div class="slide-content">
+                        </div>
+                     </div>
+                     <div class="slide slide_2">
+                        <div class="slide-content">
+                        </div>
+                     </div>
+                     <div class="slide slide_3">
+                        <div class="slide-content">
+                        </div>
+                     </div>
+                     <div class="slide slide_4">
+                        <div class="slide-content">
+                        </div>
+                     </div>
+                     <div class="slide slide_5">
+                        <div class="slide-content">
+                        </div>
+                     </div>
+                     <div class="slide slide_6">
+                        <div class="slide-content">
+                        </div>
+                     </div>
+                     <div class="slide slide_7">
+                        <div class="slide-content"><p>Прочие персонажи в разработке</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="controls">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+               <label for="slide5"></label>
+               <label for="slide6"></label>
+               <label for="slide7"></label>
+            </div>
+            <div id="bullets">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+               <label for="slide5"></label>
+               <label for="slide6"></label>
+               <label for="slide7"></label>
+            </div>
+         </div>
+         <div class="opisanie">
+         <div class="Product-Description">
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;Окунитесь в полюбившуюся миллионам, людей по всему миру, настольно ролевую игру, Мафия. 
+            В совершенно иной атмосфере, атмосфере мира, созданного Джоан Роулинг, мира Гарри Поттера.<br><br>
+               <div class = info_r><a href="#openModal-potter"><p style="color:#ffffff"><font size="4">Читать подробнее</font></p></a></div>
+                 <!--Модальное окно для информации по Гарри Поттеру--> 
+               <div id="openModal-potter" class="modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h3 class="modal-title">Мафия Гарри Поттера</h3>
+                            <a href="#close-potter" title="Close" class="close">×</a>
+                            </div>
+                            <div class="modal-body">
+                                <p>                            
+                                    &nbsp;&nbsp;&nbsp;&nbsp;Окунитесь в полюбившуюся миллионам, людей по всему миру, настольно ролевую игру, Мафия. 
+                                    В совершенно иной атмосфере, атмосфере мира, созданного Джоан Роулинг, мира Гарри Поттера.<br><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;В данной вариации Маффии в окунётесь в события четвёртой части саги под названием, "Кубок Огня".<br>
+                                    Клан мирных жителей будет представлен в лицах: <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;Чемпионов турнира: <br>Гарри Поттер, Седрик Диггори, Флёр Делакур и Виктор Крам.<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;Их друзей и спутников: <br>Гермиона Грежер, Рон Уизли, Джоу Чанг.<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;Роль Шерифа примерит <br>Барти Крауч Старший.<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;На стороне же мафии выступят: <br>Барти Крауч младший и Питтер Петтигрю.<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;Роль дона мафии несомненно дастанется неповторимому<br>Лорду Волан-Де-Морту.<br><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;Доступно 2 режима игры, классический, при котором правила остаются стандартными<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;И кастомный, режим с необычными правилами, направленными на большее погружение в атмосферу игры.
+                                </p>                        
+                            </div>
+                        </div>
+                    </div>
+            </div>
+         </div>
+         <div class="kypi">
+             <div class="kypi-panel">&nbsp;Заказать игру&nbsp;</div>
+             <div class="kypi-panel">&nbsp;Оставить отзыв&nbsp;</div>
+         </div>
+        </div>
+    </div>
+    <div class="all_prod">
+        <div class="all_prod_item"></div>
+    </div>
+<div class="info">
+        <div class="O_nas">
+            <div style="display: flex; width: 95%; height: 50%;">
+            <div class="Portrait Foto1"></div>
+            <div style="margin-top: 5vh; margin-left: 5vw; max-width: 23vw;">
+                <P style="margin-top: calc(25% - 5vh);">Гармашов Артём ИВТ-163</P><br>
+                <p>Глава проекта, ответственный за концепт и вёрстку сайта.</p>
+            </div>
+            </div>
+            <div style="display: flex; width: 95%; height: 50%;">
+            <div style="margin-top: 5vh; margin-left: auto;max-width: 23vw;">
+                <P style="margin-top: calc(25% - 5vh);">Аленикова Надежда ИВТ-161</P><br>
+                <p>Главный дизайнер проекта, ответвенна за оформление сайта.</p></div>
+            <div class="Portrait Foto2"></div>
+            </div>
+            <div style="display: flex; width: 95%; height: 50%;">
+                <div class="Portrait Foto3"></div>
+                <div style="margin-top: 5vh; margin-left: 5vw; max-width: 23vw;">
+                <P style="margin-top: calc(25% - 5vh);">Полякова Татьяна ИВТ-163</P><br>
+                <p>Глава пиар отдела и менеджер по документации, ответственна, за работу с документацией и анализом рынка.</p>
+            </div>
+            </div>
+            <div style="display: flex; width: 95%; height: 50%; margin-bottom: 10vh;">
+            <div style="margin-top: 5vh; margin-left: auto;max-width: 23vw;">
+                <P style="margin-top: calc(25% - 5vh);">Курышева Дарья ИВТ-161</P><br>
+                <p>Глава художественного отдела, ответвенна, за творческую составляющую сайта.</p></div>
+                <div class="Portrait Foto4"></div>
+            </div>
+        </div>
+    <div style="display: flex;">
+        <div class="info_mat"><img src="img/016-discord.png" height="20px"></div>
+        <div class="info_mat"><img src="img/023-facebook.png" height="20px"></div>
+        <div class="info_mat"><img src="img/040-google play.png" height="20px"></div>
+        <div class="info_mat"><img src="img/044-instagram.png" height="20px"></div>
+        <div class="info_mat"><img src="img/089-telegram.png" height="20px"></div>
+        <div class="info_mat"><img src="img/096-twitter.png" height="20px"></div>
+        <div class="info_mat"><img src="img/105-VK.png" height="20px"></div>
+        <div class="info_mat"><img src="img/109-whatsapp.png" height="20px"></div>
+        <div class="info_mat"><img src="img/116-youtube.png" height="20px"></div>
+        <div style="margin: auto 0 0 auto;"><font size="1">Автор иконок: <a href="https://www.flaticon.com/ru/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
+                                                from <a href="https://www.flaticon.com/ru/" title="Flaticon">www.flaticon.com</a></font></div>
+    </div>
+</div>
+    <script src="js/scipts.js"></script>
+</body></font>
+</html>
