@@ -63,3 +63,22 @@ document.addEventListener("DOMContentLoaded", function(){
       document.querySelector('#openModal-potter').style.marginLeft = '0px';
     });
   });
+
+$('#send-info').click(()=>{
+  $.post(
+      "core/mail.php",
+      {
+          "name": $('#name').val(),
+          "email" : $('#email').val(),
+          "org" : $('#ord').val(),
+          "select" : $('#choose-theme').val()
+      },
+      function(data){
+          if (data==1){
+              alert('Ваше обращение отправленно')
+          }else{
+              alert('Что-то не так, попробуйте еще раз')
+          }
+      }
+  )
+})

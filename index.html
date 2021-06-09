@@ -61,20 +61,20 @@
                                 
                                 <div class="helper-infofield">Тема обращения</div>
                                 <select id="choose-theme" class="spisok" name="theme" >
-                                <option selected>Выберите вариант</option>
-                                <option>Вопрос по работе сайта</option>
-                                <option>Помощь в оформлении заказа</option>
-                                <option>Сотрудничество</option>
-                                <option>Сообщения о неполадках</option>
-                                <option>Пожелания / предложения</option>
+                                <option value="0" selected>Выберите вариант</option>
+                                <option value = "Вопрос по работе сайта">Вопрос по работе сайта</option>
+                                <option value = "Помощь в оформлении заказа">Помощь в оформлении заказа</option>
+                                <option value = "Сотрудничество">Сотрудничество</option>
+                                <option value = "Сообщения о неполадках">Сообщения о неполадках</option>
+                                <option value = "Пожелания / предложения">Пожелания / предложения</option>
                                 </select>
 
                                 <div><br>Ваше имя</div>
-                                <input type="form" name="name" >
+                                <input type="form" id="name" >
                                 <div><br>Ваш email</div>
-                                <input type="form" name="email">
+                                <input type="form" id="email">
                                 <div><br>Сообщение</div>
-                                <textarea id= "user-onfo" class="spisok" name="message" style="width:70%"></textarea>
+                                <textarea id= "user-onfo" class="spisok" id="org" style="width:70%"></textarea>
                                 <br><br>
                                 <input id = "send-info" type="submit" name="submit_btn" value="Отправить">                                
                             </form>                        
